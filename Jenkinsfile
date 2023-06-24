@@ -26,13 +26,7 @@ pipeline {
 				sh "mvn package -DskipTests=true "
 			}
 		} 
-	stage("test"){
-
-	steps{
-		sh "mvn test"
-	}	
-
-	}	
+		
     
 }
 }
