@@ -4,15 +4,7 @@ pipeline {
      stages {
         
 
-	stage ('GIT') {
-             steps {
-                //echo "Getting Project from Git"; 
-                //git branch:"master", url : "https://github.com/haifgh/Devops-gomycode.git"; 
-        	echo "ok"  
-	   }
-          }
-
-       stage("Verification du version Maven") {
+	stage("Verification du version Maven") {
            steps {
                 sh "mvn -version"
               
@@ -28,5 +20,6 @@ pipeline {
                 }
             }
         } 	
-    }
+    
+}
 }
